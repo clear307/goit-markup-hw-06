@@ -459,17 +459,29 @@
         <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
         <form class="modal-form">
           <div class="form-fild">
-            <svg class="form-icon-name" width="18" height="18">
+            <label for="mame" class="form-title">Ім'я</label>
+            <svg class="form-icon" width="18" height="18">
               <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
             </svg>
-            <label for="mame" class="form-title">Ім'я</label>
-            <input type="text" class="form-input" name="user-name" id="mame" />
+            <input
+              type="text"
+              class="form-input"
+              name="user-name"
+              id="mame"
+              autofocus
+            />
           </div>
           <div class="form-fild">
+            <svg class="form-icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+            </svg>
             <label for="tel" class="form-title">Телефон</label>
             <input type="tel" class="form-input" name="user-tel" id="tel" />
           </div>
           <div class="form-fild">
+            <svg class="form-icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+            </svg>
             <label for="email" class="form-title">Пошта</label>
             <input
               type="email"
@@ -480,10 +492,33 @@
           </div>
           <div class="form-fild">
             <label for="user-comment" class="form-title">Коментар</label>
-            <textarea name="user-comment" id="user-comment" class="form-comment" placeholder="Введіть текст"></textarea>
+            <textarea
+              name="user-comment"
+              id="user-comment"
+              class="form-comment"
+              placeholder="Введіть текст"
+            ></textarea>
           </div>
-          <div class="form-fild"></div>
-          <button type="submit">Відправити</button>
+          <div class="form-fild">
+            <input
+              type="checkbox"
+              name="user-polisy"
+              class="form-checkbox visually-hidden"
+              value="true"
+              id="user-polisy"
+            />
+            <label for="user-polisy" class="check-text">
+              <span class="check">
+                <svg class="form-icon-name" width="11" height="8">
+                  <use href="./images/icons.svg#icon-checkbox"></use>
+                </svg>
+              </span
+              >Погоджуюся з розсилкою та приймаю<pre> </pre><a href="#" class="check-terms link"
+                >Умови договору</a
+              ></label
+            >
+          </div>
+          <button type="submit" class="form-btn">Відправити</button>
         </form>
       </div>
     </div>
