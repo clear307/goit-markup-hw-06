@@ -680,11 +680,19 @@ margin-bottom: 30px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
-margin-bottom: 28px;
+padding-left: 42px;
 }
 
+.form-input:focus {
+outline-color: var(--accent-color);
+}
 .form-fild {
   
+}
+.input-wrap {
+  position: relative;
+  margin-top: 4px;
+  margin-bottom: 28px;
 }
 .form-title {
 font-size: 12px;
@@ -692,9 +700,17 @@ line-height: calc(14/12);
 letter-spacing: 0.01em;
 color: var(--text-color);
 }
+
 .form-icon {
 position: absolute;
+left: 15px;
+top: 50%;
+transform: translateY(-50%);
 }
+
+.form-input:focus + .form-icon {
+  fill: var(--accent-color);
+  }
 
 .form-comment {
   width: 100%;
